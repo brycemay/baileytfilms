@@ -3,21 +3,20 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./pictures/logo.jpg";
+import home from "./components/Home";
+import aboutme from "./components/About";
+import pricing from "./components/Pricing";
+import photos from "./components/Photos";
+import videos from "./components/Videos";
+import booknow from "./components/Booknow";
 
 function App() {
   return (
     <Router>
       <div className="Container">
-
         <nav className="navbar navbar-expand-lg navbar-light bg-nothing">
-          <a className="navbar-brand" href="/" target="_black">
-          <img src={logo} width="50" height="50" alt="" />{" "}
-            {
-              <div className="Tilt-inner">
-                {" "}
-                
-              </div>
-            }
+          <a className="avatar" href="/" target="_black">
+            <img src={logo} width="50" height="50" alt="" />{" "}
           </a>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
@@ -42,19 +41,19 @@ function App() {
                 </Link>
               </li>
               <li className="navbar-item">
-                <Link to="/contact" className="nav-link">
-                  Contact
+                <Link to="/booknow" className="booknow">
+                  Book Now!
                 </Link>
               </li>
             </ul>
           </div>
         </nav>
-        <Route path="/" exact component='' />
-          <Route path="/about" component='' />
-          <Route path="/video" component='' />
-          <Route path="/photo" component='' />
-          <Route path="/video" component='' />
-          <Route path="/contact" component='' />
+        <Route path="/" exact component={home} />
+        <Route path="/about" component={aboutme} />
+        <Route path="/video" component={videos} />
+        <Route path="/photo" component={photos} />
+        <Route path="/pricing" component={pricing} />
+        <Route path="/booknow" component={booknow} />
       </div>
     </Router>
   );
