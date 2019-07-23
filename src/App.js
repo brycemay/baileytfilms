@@ -14,12 +14,12 @@ function App() {
   return (
     <Router>
       <div className="Container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-nothing">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-nothing">
           <a className="avatar" href="/" target="_black">
             <img src={logo} width="50" height="50" alt="" />{" "}
           </a>
           <div className="collapse navbar-collapse">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-auto navbar-custom">
               <li className="navbar-item">
                 <Link to="/about" className="nav-link">
                   About
