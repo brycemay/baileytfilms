@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./pictures/logo.jpg";
+import logo from "./pictures/baileyslogo.png.jpeg";
 import home from "./components/Home";
 import aboutme from "./components/About";
 import pricing from "./components/Pricing";

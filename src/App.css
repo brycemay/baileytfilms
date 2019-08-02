@@ -75,6 +75,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
   
 }
 
@@ -87,3 +88,4 @@
   border-color: black;
   text-indent: 50px;
 }
+
